@@ -2,7 +2,7 @@
 .container {
 	background: url("../img/bg.png");
 	border-radius: 2.5em;
-	height: 55em;
+	height: auto;
 }
 
 .primary-nav {
@@ -129,100 +129,221 @@ footer {
 
 
 /* Media Queries*/
-@media screen and (max-width: 800px) {
-
+@media screen and (min-width: 800px) {
 	.container {
 		width: 80%;
 		max-width: 80%;
+		height: auto;
+	}
+
+	.primary-nav {
+		width: 80%;
+		max-width: 80%;
+	}
+
+	.primary-nav li {
+		margin-left: -2.5em;
+		padding-right: 1.5em;
+		font-size: 1.6em;
 	}
 
 	img {
-		width: 40%;
-		max-width: 40%;
+		width: 35%;
+		max-width: 35%;
+		float: left;
 	}
-
 
 	h1 {
-		width: 40%;
-		max-width: 40%;
-		font-size: 2.5em;
+		width: 55%;
 		float: right;
-		margin-right: 1.25em;
-	}
-
-	p {
-		width: 80%;
-		max-width: 80%;
-		font-size: 0.75em;
-		padding-left: 1em;
-		margin-left: 2em;
-
+		margin-right: 0.5em;
 	}
 
 	h2 {
-		width: 80%;
-		max-width: 80%;
-		font-size: 1.5em;
-		float: left;
-		margin-left: 1em;
+		width: 75%;
+		max-width: 75%;
+		position: absolute;
+		top: 10em;
+		right: 2em;
 	}
+
+	#mis {
+		position: relative;
+		top: 0em;
+		right: 4em;
+	}
+	#mis + p {
+		top: -2em;
+		width: 80%;
+	}	
+
+	#bi {
+		position: relative;
+		top: -2em;
+		right: 4em;
+	}
+	#bi + p {
+		top: -4em;
+		width: 80%;
+	}	
 
 	footer {
-		width: 45%;
-		max-width: 45%;
-		font-size: 0.75em;
-		color: blue;
 		float: right;
+		margin-right: 2em;
+		top: -1em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		width: 80%;
+		max-width: 80%;
+		height: auto;
 	}
 
+	.primary-nav {
+		width: 80%;
+		max-width: 80%;
+	}
+
+	.primary-nav li {
+		width: 80%;
+		max-width: 80%;
+		margin-left: -2.5em;
+		padding-right: 2em;
+		font-size: 1.25em;
+	}
+
+	img {
+		width: 35%;
+		max-width: 35%;
+		float: left;
+	}
+
+	h1 {
+		width: 50%;
+		max-width: 50%;
+		float: right;
+		margin-right: 0.5em;
+		font-size: 2.25em;
+		top: 3.5em;
+	}
+
+	h2 {
+		width: 75%;
+		max-width: 75%;
+		position: absolute;
+		top: 10em;
+		right: 2em;
+	}
+
+	#mis {
+		position: relative;
+		top: 0em;
+	}
+	#mis + p {
+		top: -2em;
+		width: 80%;
+	}	
+
+	#bi {
+		position: relative;
+		top: -2em;
+	}
+	#bi + p {
+		top: -4em;
+		width: 80%;
+	}	
+
+	footer {
+		float: right;
+		margin-right: 2em;
+		top: -1em;
+	}
 }
 
 /* ========= Mobile ========= */
 
 @media screen and (max-width: 480px) {
-
 	.container {
-		width: 90%;
-		max-width: 90%;
+		width: 80%;
+		max-width: 80%;
+		height: auto;
+	}
+
+	.primary-nav {
+		width: 40%;
+		max-width: 40%;
+		height: auto;
+	}
+
+	.primary-nav li {
+		width: 80%;
+		max-width: 80%;
+		margin-left: -3em;
+		margin-right: 1em;
+		font-size: 1.5em;
+	}
+
+	.nav {
+		position: relative;
+		top: 5em;
+		left: 7em;
 	}
 
 	img {
-		width: 35%;
-		max-width: 35%;
+		width: 42%;
+		max-width: 42%;
+		float: right;
+		margin-top: -7em;
+		margin-right: 0.5em;
 	}
-
 
 	h1 {
-		width: 35%;
-		max-width: 35%;
-		font-size: 2em;
+		width: 95%;
+		max-width: 95%;
 		float: right;
-		margin-right: 2em;
-	}
-
-	p {
-		width: 80%;
-		max-width: 80%;
-		font-size: 1em;
-		padding-left: 1em;
-		margin-left: 1em;
-
+		margin-right: 0em;
+		font-size: 2em;
+		top: 5em;
 	}
 
 	h2 {
-		width: 80%;
-		max-width: 80%;
-		font-size: 1.3em;
-		float: left;
-		margin-left: 1em;
-		margin-right: 1em;
+		width: 85%;
+		max-width: 85%;
+		position: absolute;
+		right: 0em;
+		font-size: 1.25em;
 	}
 
-	footer {
-		width: 45%;
-		max-width: 45%;
-		font-size: 0.75em;
-		color: blue;
-		float: right;
+	#mis {
+		position: relative;
+		top: 2em;
 	}
+	#mis + p {
+		top: 0em;
+		width: 85%;
+		max-width: 85%;
+		left: 30em;
+		font-size: 1em;
+	}	
+
+	#bi {
+		position: relative;
+		top: 0em;
+	}
+	#bi + p {
+		top: -2em;
+		width: 85%;
+		max-width: 85%;
+		left: 30em;
+		font-size: 1em;
+	}	
+
+	footer {
+		float: right;
+		margin-right: 2em;
+		top: -1em;
+	}
+
 }
